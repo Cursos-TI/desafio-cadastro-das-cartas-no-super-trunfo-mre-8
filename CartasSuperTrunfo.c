@@ -38,6 +38,7 @@ int main() {
     printf("\n");
 
     printf("Insira o nome da proxima cidade: \n");
+    while (fgetc(stdin) != '\n');
     fgets(cidadeA02, 50, stdin);
     printf("insira o estado da cidade: \n");
     fgets(estadoA02, 50, stdin);
@@ -65,6 +66,7 @@ int main() {
 
     printf("Carta: %s\n", cidadeA01);
     printf("Estado: %s\n", estadoA01);
+    printf("SuperPoder: %.2f\n", superpoderA01);
     printf("Area em km2: %.2f\n", areaA01);
     printf("Pontos Turisticos: %i\n", pontosturisticosA01);
     printf("Populacao: %u\n", populacaoA01);
@@ -76,6 +78,7 @@ int main() {
 
     printf("Carta: %s\n", cidadeA02);
     printf("Estado: %s\n", estadoA02);
+    printf("SuperPoder: %.2f\n", superpoderA02);
     printf("Area em km2: %.2f\n", areaA02);
     printf("Pontos Turisticos: %i\n", pontosturisticosA02);
     printf("Populacao: %u\n", populacaoA02);
@@ -85,5 +88,51 @@ int main() {
     printf("Codigo da Cidade: %s\n", codigoA02);
     printf(" \n\n\n");
 
+    printf("Comparacao das Cartas \n");
+
+    if (superpoderA01 > superpoderA02) {
+        printf("SuperPoder: %s venceu", cidadeA01);
+        printf("\n");
+    } 
+    else {
+        printf("SuperPoder: %s venceu\n", cidadeA02);
+    }
+    if (areaA01 > areaA02) {
+        printf("Area km2: %s venceu\n", cidadeA01);
+    } 
+    else {
+        printf("Area km2: %s venceu\n", cidadeA02);
+    }
+    if (pontosturisticosA01 > pontosturisticosA02) {
+        printf("Pontos Turisticos: %s venceu\n", cidadeA01);
+    } 
+    else {
+        printf("Pontos Turisticos: %s venceu\n", cidadeA02);
+    }
+    if (populacaoA01 > populacaoA02) {
+        printf("Populacao: %s venceu\n", cidadeA01);
+    } 
+    else {
+        printf("Populacao: %s venceu\n", cidadeA02);
+    }
+    if (densidadepopulacaoA01 > densidadepopulacaoA02) {
+        printf("Densidade Populacional hab/km2: %s venceu\n", cidadeA01);
+    } 
+    else {
+        printf("Densidade Populacional hab/km2: %s venceu\n", cidadeA02);
+    }
+    if (pibA01 > pibA02) {
+        printf("PIB: %s venceu\n", cidadeA01);
+    } 
+    else {
+        printf("PIB: %s venceu\n", cidadeA02);
+    }
+    if (pibpercapitaA01 > pibpercapitaA02) {
+        printf("PIB Per Capita: %s venceu\n", cidadeA01);
+    } 
+    else {
+        printf("PIB Per Capita: %s venceu\n", cidadeA02);
+    }
+    
     return 0;
 }
