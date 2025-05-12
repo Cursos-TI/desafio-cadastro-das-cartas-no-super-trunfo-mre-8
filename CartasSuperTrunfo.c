@@ -91,47 +91,47 @@ int main() {
     printf("Comparacao das Cartas \n");
 
     if (superpoderA01 > superpoderA02) {
-        printf("SuperPoder: %s venceu", cidadeA01);
+        printf("SuperPoder: %s venceu (1)", cidadeA01);
         printf("\n");
     } 
     else {
-        printf("SuperPoder: %s venceu\n", cidadeA02);
+        printf("SuperPoder: %s venceu (0)\n", cidadeA02);
     }
     if (areaA01 > areaA02) {
-        printf("Area km2: %s venceu\n", cidadeA01);
+        printf("Area km2: %s venceu (1)\n", cidadeA01);
     } 
     else {
-        printf("Area km2: %s venceu\n", cidadeA02);
+        printf("Area km2: %s venceu (0)\n", cidadeA02);
     }
     if (pontosturisticosA01 > pontosturisticosA02) {
-        printf("Pontos Turisticos: %s venceu\n", cidadeA01);
+        printf("Pontos Turisticos: %s venceu (1)\n", cidadeA01);
     } 
     else {
-        printf("Pontos Turisticos: %s venceu\n", cidadeA02);
+        printf("Pontos Turisticos: %s venceu (0)\n", cidadeA02);
     }
     if (populacaoA01 > populacaoA02) {
-        printf("Populacao: %s venceu\n", cidadeA01);
+        printf("Populacao: %s venceu (1)\n", cidadeA01);
     } 
     else {
-        printf("Populacao: %s venceu\n", cidadeA02);
+        printf("Populacao: %s venceu (0)\n", cidadeA02);
     }
     if (densidadepopulacaoA01 > densidadepopulacaoA02) {
-        printf("Densidade Populacional hab/km2: %s venceu\n", cidadeA01);
+        printf("Densidade Populacional hab/km2: %s venceu (1)\n", cidadeA01);
     } 
     else {
-        printf("Densidade Populacional hab/km2: %s venceu\n", cidadeA02);
+        printf("Densidade Populacional hab/km2: %s venceu (0)\n", cidadeA02);
     }
     if (pibA01 > pibA02) {
-        printf("PIB: %s venceu\n", cidadeA01);
+        printf("PIB: %s venceu (1)\n", cidadeA01);
     } 
     else {
-        printf("PIB: %s venceu\n", cidadeA02);
+        printf("PIB: %s venceu (0)\n", cidadeA02);
     }
     if (pibpercapitaA01 > pibpercapitaA02) {
-        printf("PIB Per Capita: %s venceu\n", cidadeA01);
+        printf("PIB Per Capita: %s venceu (1)\n", cidadeA01);
     } 
     else {
-        printf("PIB Per Capita: %s venceu\n", cidadeA02);
+        printf("PIB Per Capita: %s venceu (0)\n", cidadeA02);
     }
     
     return 0;
