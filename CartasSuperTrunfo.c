@@ -115,7 +115,7 @@ int main() {
     else {
         printf("Populacao: %s venceu (0)\n", cidadeA02);
     }
-    if (densidadepopulacaoA01 > densidadepopulacaoA02) {
+    if (densidadepopulacaoA01 < densidadepopulacaoA02) {
         printf("Densidade Populacional hab/km2: %s venceu (1)\n", cidadeA01);
     } 
     else {
