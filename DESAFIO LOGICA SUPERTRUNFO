@@ -74,13 +74,30 @@ int main() {
 
 
     if (atributocomparacao = 1) {
-        printf("Carta A01 - %s : %f", cidadeA01, superpoderA01);
-        printf("\n");
-    } 
-    else {
-        printf("fim teste \n");
+        printf("Carta A01 - %s : %f \n", cidadeA01, superpoderA01);
+        printf("Carta A02 - %s : %f \n", cidadeA02, superpoderA02);
     }
-   
+    if (superpoderA01 > superpoderA02) {
+        printf ("Resultado: Carta A01 venceu");
+    }
+    else { 
+        printf ("Resultado: Carta A02 venceu")
+    }
+    if (atributocomparacao = 2) {
+        printf("Carta A01 - %s : %f \n", cidadeA01, areaA01);
+        printf("Carta A02 - %s : %f \n", cidadeA02, areaA02);
+    }
+    if (areaA01 > areaA02) {
+        printf ("Resultado: Carta A01 venceu");
+    }
+    else { 
+        printf ("Resultado: Carta A02 venceu")
+    } 
+    
+
+
+        printf("fim teste \n");
+    
     
     return 0;
 }
