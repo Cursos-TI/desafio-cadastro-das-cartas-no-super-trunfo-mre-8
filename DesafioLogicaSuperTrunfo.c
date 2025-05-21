@@ -10,7 +10,6 @@ int main() {
     char estadoA01[50], estadoA02[50];
     char codigoA01[50], codigoA02[50];
 
-
     printf("Cadastro de cidade \n");
     printf("Insira o nome da cidade: \n");
     fgets(cidadeA01, 50, stdin);
@@ -56,7 +55,6 @@ int main() {
 
     int atributocomparacao;
 
-
     printf("Comparacao das Cartas \n");
     
     printf("Digite um numero para selecionar o atributo e pressione enter para comparacao\n");
@@ -70,32 +68,51 @@ int main() {
     scanf("%i", &atributocomparacao);
     printf("\n");
     
-    
+    switch (atributocomparacao) {
+        case 1:
+            printf("Comparacao de SuperPoder");
+            printf("Carta A01 - %s : %f \n", cidadeA01, superpoderA01);
+            printf("Carta A02 - %s : %f \n", cidadeA02, superpoderA02);
 
+            if (superpoderA01 > superpoderA02) {
+                printf("Carta A01 venceu (1)");
+            }
+            else {
+                printf("Carta A02 venceu (0)");
+            }
 
-    if (atributocomparacao = 1) {
-        printf("Carta A01 - %s : %f", cidadeA01, superpoderA01);
-        printf("\n");
-        printf("Carta A02 - %s : %f", cidadeA02, superpoderA02);
-        printf("\n");
-
-    } 
-    
-    if (superpoderA01 > superpoderA02) {
-        printf("Carta A01 - %s : %f venceu (1)", cidadeA01, superpoderA01);
-        printf("\n");
-    
-    }
-    else {
-        printf("Carta A02 - %s : %f venceu (0)", cidadeA02, superpoderA02);
-        printf("\n");
-    
-    }
-    
+        break;
         
-    printf("fim teste \n");
+        case 2:
+            printf("Comparacao de Area km2");
+            printf("Carta A01 - %s : %f \n", cidadeA01, areaA01);
+            printf("Carta A02 - %s : %f \n", cidadeA02, areaA02);
+
+            if (areaA01 > areaA02) {
+                printf("Carta A01 venceu (1)");
+            }
+            else {
+                printf("Carta A02 venceu (0)");
+            }
+        break;
+
+        case 3:
+            printf("Comparacao de Pontos Turisticos");
+            printf("Carta A01 - %s : %f \n", cidadeA01, pontosturisticosA01);
+            printf("Carta A02 - %s : %f \n", cidadeA02, pontosturisticosA02);
+
+            if (pontosturisticosA01 > pontosturisticosA02) {
+                printf("Carta A01 venceu (1)");
+            }
+            else {
+                printf("Carta A02 venceu (0)");
+            }
+        break;
+            
+    default:
+        break;
     
-   
+    printf("fim \n");
     
     return 0;
 }
