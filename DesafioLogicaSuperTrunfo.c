@@ -10,6 +10,7 @@ int main() {
     char estadoA01[50], estadoA02[50];
     char codigoA01[50], codigoA02[50];
 
+
     printf("Cadastro de cidade \n");
     printf("Insira o nome da cidade: \n");
     fgets(cidadeA01, 50, stdin);
@@ -55,6 +56,7 @@ int main() {
 
     int atributocomparacao;
 
+
     printf("Comparacao das Cartas \n");
     
     printf("Digite um numero para selecionar o atributo e pressione enter para comparacao\n");
@@ -66,8 +68,10 @@ int main() {
     printf("6 - PIB R$\n");
     printf("7 - PIB PerCapita R$/hab\n");
     scanf("%i", &atributocomparacao);
-    printf("\n");
     
+    
+
+
     switch (atributocomparacao) {
         case 1:
             printf("Comparacao de SuperPoder");
@@ -98,8 +102,8 @@ int main() {
 
         case 3:
             printf("Comparacao de Pontos Turisticos");
-            printf("Carta A01 - %s : %f \n", cidadeA01, pontosturisticosA01);
-            printf("Carta A02 - %s : %f \n", cidadeA02, pontosturisticosA02);
+            printf("Carta A01 - %s : %i \n", cidadeA01, pontosturisticosA01);
+            printf("Carta A02 - %s : %i \n", cidadeA02, pontosturisticosA02);
 
             if (pontosturisticosA01 > pontosturisticosA02) {
                 printf("Carta A01 venceu (1)");
@@ -109,13 +113,19 @@ int main() {
             }
         break;
             
+
+    
     default:
         break;
     
+      
     printf("fim \n");
+    
+   
     
     return 0;
 }
+
 
 
 
